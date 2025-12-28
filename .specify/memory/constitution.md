@@ -1,55 +1,69 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Physical AI & Humanoid Robotics – AI-Native Technical Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Development (No ad-hoc content)
+All content and features must be defined in specifications before implementation. No ad-hoc content creation is allowed. Every chapter, module, and feature must have a corresponding spec that defines its purpose, scope, and acceptance criteria.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. AI-Native Authoring using Claude Code
+The textbook creation process must leverage Claude Code as the primary development tool. All content generation, code examples, and technical explanations should be created using AI assistance while maintaining human oversight and quality control.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Modular, extensible book architecture
+The textbook must be built with a modular architecture that allows for easy extension and modification. Each module and chapter should be self-contained while maintaining consistency across the entire book. The architecture must support future additions without requiring major refactoring.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Human + AI collaboration
+Content must be developed through collaboration between human expertise and AI assistance. AI provides generation capabilities while humans provide domain expertise, validation, and quality assurance. This ensures both efficiency and accuracy.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Grounded, non-hallucinated AI assistance
+All AI-generated content must be factually accurate and grounded in real-world knowledge. No hallucinated or fictional content is acceptable. All technical information must be verified against actual implementations and best practices in Physical AI and Humanoid Robotics.
 
-### [PRINCIPLE_6_NAME]
+### VI. Four-Module Structure
+The textbook must follow a strict four-module structure with each module containing 4-5 chapters. Every chapter must follow a standardized template to ensure consistency and navigability across the entire book.
 
+## Technology Stack Requirements
 
-[PRINCIPLE__DESCRIPTION]
+### Frontend & Content Management
+- Docusaurus (TypeScript, MDX) for documentation and content presentation
+- Strict adherence to MDX standards for embedded components and interactive elements
+- Responsive design for accessibility across devices
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Backend & AI Integration
+- FastAPI (Python) for backend services
+- OpenAI Agents for AI-generated content
+- Qdrant Cloud (Free Tier) for vector database storage and retrieval
+- Neon Serverless Postgres for relational data storage
+- better-auth for user authentication and authorization
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### AI Features & Services
+- Embedded RAG (Retrieval-Augmented Generation) chatbot for interactive learning
+- Personalized learning path recommendations
+- Urdu translation capabilities for broader accessibility
+- Reusable AI subagents for specialized tasks
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Content Creation Process
+- All content must be generated via specifications (specs)
+- Each module and chapter requires a corresponding spec file before implementation
+- Content must be reviewed and validated by domain experts
+- Technical accuracy must be verified against actual implementations
+
+### Quality Assurance
+- All content must be fact-checked against authoritative sources
+- Code examples must be tested and verified to work as described
+- AI-generated content must be validated for accuracy and safety
+- Regular reviews of AI-generated content for hallucinations or errors
+
+### Testing Requirements
+- All interactive features must have corresponding tests
+- AI features must be tested for accuracy and reliability
+- User authentication and personalization features must be thoroughly tested
+- Translation features must be verified for accuracy
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all aspects of the Physical AI & Humanoid Robotics textbook development. All contributors must adhere to these principles and requirements. Any deviation from these principles must be documented with proper justification and approval. The constitution supersedes all other development practices and guidelines.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+All pull requests and code reviews must verify compliance with these principles. Complexity must be justified with clear benefits to the learning experience. Use this constitution as the primary guidance for all development decisions.
+
+**Version**: 1.0.0 | **Ratified**: 2025-12-27 | **Last Amended**: 2025-12-27
