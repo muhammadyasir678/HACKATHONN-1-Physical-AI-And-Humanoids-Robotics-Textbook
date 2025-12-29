@@ -30,9 +30,13 @@ jobs:
           node-version: 20.x
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd frontend-book
+          npm ci
       - name: Build
-        run: npm run build
+        run: |
+          cd frontend-book
+          npm run build
       # 👆 Build steps
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -40,7 +44,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # 👇 Specify build output path
-          path: build
+          path: frontend-book/build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

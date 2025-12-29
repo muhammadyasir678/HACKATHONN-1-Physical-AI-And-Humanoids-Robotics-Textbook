@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io',
+  url: 'https://muhammadyasir678.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/physical-ai-humanoid-robotics-textbook/',
+  baseUrl: '/HACKATHONN-1-Physical-AI-And-Humanoids-Robotics-Textbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'physical-ai-humanoid-robotics-textbook', // Usually your repo name.
+  organizationName: 'muhammadyasir678', // Usually your GitHub org/user name.
+  projectName: 'HACKATHONN-1-Physical-AI-And-Humanoids-Robotics-Textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-username/physical-ai-humanoid-robotics-textbook/tree/main/',
+            'https://github.com/muhammadyasir678/HACKATHONN-1-Physical-AI-And-Humanoids-Robotics-Textbook/tree/main/',
         },
         blog: false, // Disable blog functionality for textbook
         theme: {
@@ -78,7 +78,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/your-username/physical-ai-humanoid-robotics-textbook',
+          href: 'https://github.com/muhammadyasir678/HACKATHONN-1-Physical-AI-And-Humanoids-Robotics-Textbook',
           label: 'GitHub',
           position: 'right',
         },
@@ -126,7 +126,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-username/physical-ai-humanoid-robotics-textbook',
+              href: 'https://github.com/muhammadyasir678/HACKATHONN-1-Physical-AI-And-Humanoids-Robotics-Textbook',
             },
           ],
         },
