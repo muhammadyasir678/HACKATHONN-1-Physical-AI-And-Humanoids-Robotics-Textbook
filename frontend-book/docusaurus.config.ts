@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/muhammadyasir678/HACKATHONN-1-Physical-AI-And-Humanoids-Robotics-Textbook/tree/main/',
+            'https://github.com/muhammadyasir678/HACKATHONN-1-Physical-AI-And-Humanoids-Robotics-Textbook/tree/main/frontend-book/',
         },
         blog: false, // Disable blog functionality for textbook
         theme: {
